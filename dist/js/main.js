@@ -45,6 +45,12 @@ const words = [
 function init() {
   // Load word from array
   showWord(words);
+  // Start matching on word input
+  wordInput.addEventListener("input", startMatch);
+  // Call countdown every second
+  setInterval(countdown, 1000);
+  // Check game status
+  setInterval(checkStatus, 50);
 }
 
 // Pick & show random word
@@ -53,4 +59,25 @@ function showWord(words) {
   const randIndex = Math.floor(Math.random() * words.length);
   // Output random word
   currentWord.innerHTML = words[randIndex];
+}
+
+// Countdown timer
+function countdown() {
+  // Make sure time is not run out
+  if (time > 0) {
+    // Decrease time
+    time--;
+  } else if (time === 0) {
+    // Game is over
+    isPlaying = false;
+  }
+  // Show time
+  timeDisplay.innerHTML = time;
+}
+
+// Check game status
+function checkStatus() {
+  if (!isPlaying && time === 0) {
+    message.innerHTML = "Game Over!!!";
+  }
 }
