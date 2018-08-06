@@ -1,6 +1,6 @@
 # JS-wordbeater
 
-> Simple speed typing app built with JavaScript
+Simple speed typing app built with JavaScript
 
 ## Use
 
