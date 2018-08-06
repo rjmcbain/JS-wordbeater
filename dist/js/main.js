@@ -53,6 +53,24 @@ function init() {
   setInterval(checkStatus, 50);
 }
 
+// Start match
+function startMatch() {
+  if (matchWords()) {
+    console.log("MATCH");
+  }
+}
+
+// Match currentWord to wordInput
+function matchWords() {
+  if (wordInput.value === currentWord.innerHTML) {
+    message.innerHTML = "Correct!!!";
+    return true;
+  } else {
+    message.innerHTML = "";
+    return false;
+  }
+}
+
 // Pick & show random word
 function showWord(words) {
   // Generate random array index
