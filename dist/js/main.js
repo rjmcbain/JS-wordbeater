@@ -56,8 +56,13 @@ function init() {
 // Start match
 function startMatch() {
   if (matchWords()) {
-    console.log("MATCH");
+    isPlaying = true;
+    time = 6; // This is for page load
+    showWord(words);
+    wordInput.value = "";
+    score++;
   }
+  scoreDisplay.innerHTML = score;
 }
 
 // Match currentWord to wordInput
@@ -97,5 +102,6 @@ function countdown() {
 function checkStatus() {
   if (!isPlaying && time === 0) {
     message.innerHTML = "Game Over!!!";
+    score = 0;
   }
 }
