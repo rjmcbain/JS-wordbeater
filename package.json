@@ -1,0 +1,23 @@
+{
+  "name": "JS-wordbeater",
+  "version": "1.0.0",
+  "description": "Simple speed typing app built with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmcbain/JS-wordbeater.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjmcbain/JS-wordbeater/issues"
+  },
+  "homepage": "https://github.com/rjmcbain/JS-wordbeater#readme",
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}
