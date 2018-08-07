@@ -1,7 +1,17 @@
 window.addEventListener("load", init);
 
+// Game modes
+const levels = {
+  easy: 5,
+  medium: 3,
+  hard: 2
+};
+
+// To change game modes
+const currentLevel = levels.easy;
+
 // Globals
-let time = 5;
+let time = currentLevel;
 let score = 0;
 let isPlaying;
 
