@@ -6,9 +6,10 @@ Simple speed typing app built with JavaScript
 
 Run index.html in a browser
 
-Try it - [WordBeater Game](https://rjmcbain.github.io/JS-wordbeater)
+Try it - [WordBeater Game](http://www.rjmcbain.com/wordbeater/index.html)
 
 ## App Info
+[https://i.imgur.com/9ZMN2CU.png](https://i.imgur.com/9ZMN2CU.png)
 
 ### Author
 
